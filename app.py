@@ -42,7 +42,7 @@ def predict():
     #output = round(prediction[0], 2)
     output= prediction
 
-    return render_template('index.html', prediction_text='Predicted rain is {}'.format(output))
+    return render_template('index.html', prediction_text='Predicted rain(予想される雨は): {}'.format(output))
 
 @app.route('/results',methods=['POST'])
 def results():
