@@ -12,8 +12,10 @@ in the sample code by initializing the y_pred array in the same manner and then 
   
  <h1> Update
   <br>
-  <p>Added simple webapp made with the flask framework 
   <br>
+  <h4>Added simple webapp made with the flask framework 
+  <br>
+   <br> 
   Please note that this webapp is not yet error proof and only works for a specific input format. Support for other formats will be added soon.
   <br>
   To run the app change navigate to this directory and run "$ python3 app.py"
