@@ -25,4 +25,22 @@ in the sample code by initializing the y_pred array in the same manner and then 
   Enter name of city LOWERCASE ONLY.
   <br>
   Enter date_time in the format "YYYYMMDDHHMMSS"
+  <br>
+    <br>
+  <h1> Update
+  <br>
+  <br>
+  <h4>Added functionality for curl command 
+  <br>
+   <br> 
+   Enter the curl command in the following format: " curl -X POST -H "Content-Type: application/json" -d '{"place":"tokyo", "datetime":20200918080000}' http://127.0.0.1:5000/results "
+  <br>
+    You should get a result in the following format: <br>
+    {
+    "Place": "tokyo", 
+    "rainfall": 0.31246800953051446
+    }
+<br>
+  Enter date_time in the format "YYYYMMDDHHMMSS"  
+    
   
