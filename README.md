@@ -12,7 +12,7 @@ in the sample code by initializing the y_pred array in the same manner and then 
   
  <h1> Update
   <br>
-  Added simple webapp made with the flask framework 
+  <p>Added simple webapp made with the flask framework 
   <br>
   Please note that this webapp is not yet error proof and only works for a specific input format. Support for other formats will be added soon.
   <br>
