@@ -48,10 +48,32 @@ def predict():
 def results():
 
     data = request.get_json(force=True)
-    prediction = model.predict([np.array(list(data.values()))])
-
+    features = list(data.values())
+    a= np.zeros(3);
+    a[0]= (int(features[1])/1000.0-20200900000)/(20201231000-20200900000)
+    if features[0]=="tokyo":
+        a[1]=0.910
+        a[2]=0.745
+    elif features[0]=="naha":
+        a[1]=0.0485
+        a[2]=0.0153
+    elif features[0]=="fukuoka": 
+        a[1]=0.241
+        a[2]=0.583
+    elif features[0]=="sendai": 
+        a[1]=0.992
+        a[2]=0.943
+    elif features[0]=="osaka": 
+        a[1]=0.607
+        a[2]=0.667
+    elif features[0]=="nigata": 
+        a[1]=0.8578
+        a[2]=0.914
+    prediction = model.predict(a.reshape(1,3))
+    
     output = prediction[0]
-    return jsonify(output)
+    res= {"Place": features[0],"rainfall": output}
+    return res
 
 if __name__ == "__main__":
     app.run(debug=True)
