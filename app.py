@@ -33,6 +33,8 @@ def predict():
     elif features[0].lower()=="nigata": 
         a[1]=0.8578
         a[2]=0.914
+    else:
+        return render_template('index.html', prediction_text='Invalid City Name {}'.format("!"))    
             
         
     #final_features = [np.array(a)]
