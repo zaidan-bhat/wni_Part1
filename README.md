@@ -1,4 +1,4 @@
-<h1>WNI_Project
+<h1>WNI_Project(Rainfall Prediction)
 
 <h4>This is a linear regression model, I have performed min-max normalization on the input attributes(X_train and X_test). 
 I extracted the columns from the dataframe because verify_prediction method was not accepting ndarrays an inputs. So I changed to the format used
