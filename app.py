@@ -1,7 +1,7 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
-
+import re
 app = Flask(__name__)
 model = pickle.load(open('finalized_model.sav', 'rb'))
 
