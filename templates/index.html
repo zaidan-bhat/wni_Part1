@@ -19,7 +19,7 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="place" placeholder="place (場所)" required="required" />
-        <input type="text" name="date_time" placeholder="date_time (日時)" required="required" />
+        <input type="number" name="date_time" placeholder="date_time (日時)" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict rainfall (降雨量を予測する)</button>
     </form>
 
