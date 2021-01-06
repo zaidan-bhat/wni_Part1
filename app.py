@@ -14,9 +14,10 @@ def predict():
 
     features = [x for x in request.form.values()]
     a= np.zeros(3);
-    if int(features[1])<20200901080000 or int(features[1])>20210224080000:
+    dts= re.sub('[^0-9]','', features[1])
+    if int(dts)<202009010800 or int(dts)>202102240800:
         return render_template('index.html', prediction_text='Invalid Date {}'.format("!"))
-    a[0]= (int(features[1])/1000.0-20200900000)/(20201231000-20200900000)
+    a[0]= (int(dts)/10.0-20200900000)/(20201231000-20200900000)
     if features[0].lower()=="tokyo":
         a[1]=0.910
         a[2]=0.745
