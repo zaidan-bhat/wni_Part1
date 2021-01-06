@@ -15,22 +15,22 @@ def predict():
     features = [x for x in request.form.values()]
     a= np.zeros(3);
     a[0]= (int(features[1])/1000.0-20200900000)/(20201231000-20200900000)
-    if features[0]=="tokyo":
+    if features[0].lower()=="tokyo":
         a[1]=0.910
         a[2]=0.745
-    elif features[0]=="naha":
+    elif features[0].lower()=="naha":
         a[1]=0.0485
         a[2]=0.0153
-    elif features[0]=="fukuoka": 
+    elif features[0].lower()=="fukuoka": 
         a[1]=0.241
         a[2]=0.583
-    elif features[0]=="sendai": 
+    elif features[0].lower()=="sendai": 
         a[1]=0.992
         a[2]=0.943
-    elif features[0]=="osaka": 
+    elif features[0].lower()=="osaka": 
         a[1]=0.607
         a[2]=0.667
-    elif features[0]=="nigata": 
+    elif features[0].lower()=="nigata": 
         a[1]=0.8578
         a[2]=0.914
             
@@ -42,7 +42,7 @@ def predict():
     #output = round(prediction[0], 2)
     output= prediction
 
-    return render_template('index.html', prediction_text='Predicted rain is {}'.format(output))
+    return render_template('index.html', prediction_text='Predicted rain(予想される雨は): {}'.format(output))
 
 @app.route('/results',methods=['POST'])
 def results():
@@ -51,22 +51,22 @@ def results():
     features = list(data.values())
     a= np.zeros(3);
     a[0]= (int(features[1])/1000.0-20200900000)/(20201231000-20200900000)
-    if features[0]=="tokyo":
+    if features[0].lower()=="tokyo":
         a[1]=0.910
         a[2]=0.745
-    elif features[0]=="naha":
+    elif features[0].lower()=="naha":
         a[1]=0.0485
         a[2]=0.0153
-    elif features[0]=="fukuoka": 
+    elif features[0].lower()=="fukuoka": 
         a[1]=0.241
         a[2]=0.583
-    elif features[0]=="sendai": 
+    elif features[0].lower()=="sendai": 
         a[1]=0.992
         a[2]=0.943
-    elif features[0]=="osaka": 
+    elif features[0].lower()=="osaka": 
         a[1]=0.607
         a[2]=0.667
-    elif features[0]=="nigata": 
+    elif features[0].lower()=="nigata": 
         a[1]=0.8578
         a[2]=0.914
     prediction = model.predict(a.reshape(1,3))
