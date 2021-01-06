@@ -10,7 +10,7 @@ in the sample code by initializing the y_pred array in the same manner and then 
  <h3>To train the model and see results on test data do "$ python3 model.py" in terminal after navigating to the directory
   
   
- <h1> Update
+ <h1> Update 1
   <br>
   <br>
   <h4>Added simple webapp made with the flask framework 
@@ -27,7 +27,7 @@ in the sample code by initializing the y_pred array in the same manner and then 
   Enter date_time in the format "YYYYMMDDHHMMSS"
   <br>
     <br>
-  <h1> Update
+  <h1> Update 2
   <br>
   <br>
   <h4>Added functionality for curl command 
@@ -44,7 +44,7 @@ in the sample code by initializing the y_pred array in the same manner and then 
   Enter date_time in the format "YYYYMMDDHHMMSS"  
     <br>
     <br>
-      <h1> Update
+      <h1> Update 3
   <br>
   <br>
   <h4>Added Validation for date and City name
