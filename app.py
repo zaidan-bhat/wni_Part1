@@ -45,6 +45,10 @@ def predict():
 
     #output = round(prediction[0], 2)
     output= round(prediction,4)
+    if(output>1):
+        output=0.999
+    if(output<0):
+        output=0.00 
 
     return render_template('index.html', prediction_text='Predicted rain(予想される雨は): {}'.format(output))
 
