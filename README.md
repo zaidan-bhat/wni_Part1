@@ -42,5 +42,18 @@ in the sample code by initializing the y_pred array in the same manner and then 
     }
 <br>
   Enter date_time in the format "YYYYMMDDHHMMSS"  
+    <br>
+    <br>
+      <h1> Update
+  <br>
+  <br>
+  <h4>Added Validation for date and City name
+  <br>
+   <br> 
+   Now the app should output "Invalid date" if an invalid date is entered and "Invalid city" if name of a city not in the dataset is entered.
+    Also now the inptut city name can be written in both lower and upper case. Valid dates range from 1st Sept 2020 to 24th Feb 2021. 
+  
+<br>
+  Enter date_time in the format "YYYYMMDDHHMMSS"  
     
   
