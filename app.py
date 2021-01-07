@@ -33,7 +33,7 @@ def predict():
     elif features[0].lower()=="osaka": 
         a[1]=0.607
         a[2]=0.667
-    elif features[0].lower()=="nigata": 
+    elif features[0].lower()=="niigata": 
         a[1]=0.8578
         a[2]=0.914
     else:
